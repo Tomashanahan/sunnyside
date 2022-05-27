@@ -19,7 +19,7 @@ function Navbar() {
 			zIndex={5}
 		>
 			<img src={logo} alt="Logo" />
-			{_width <= 414 ? (
+			{_width <= 650 ? (
 				<p>Hola</p>
 			) : (
 				<Flex justify={"space-around"} align="center">

@@ -30,7 +30,7 @@ function Banner() {
 			</Box>
 
 			<Flex position={"relative"} zIndex={1} mt={"-50px"} justify="center">
-				<Image src={naranja} alt="Banner" />
+				<Image src={naranja} alt="Banner" w={['100%','100%','100%']}/>
 			</Flex>
 		</Box>
 	);
