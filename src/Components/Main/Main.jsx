@@ -53,6 +53,23 @@ function Main() {
 							<Text color="#868688" fontWeight={"hairline"} textAlign="left">
 								{elem.paragraph}
 							</Text>
+							<Box>
+								<Text
+									fontFamily={"'Fraunces', serif"}
+									fontWeight={"extrabold"}
+									textAlign="left"
+									mb="-10px"
+								>
+									LEARN MORE
+								</Text>
+								<Box
+									bg={i % 2 === 0 ? "#FDD100" : "#FF7366"}
+									ml="-5px"
+									h="10px"
+									w="130px"
+									borderRadius={"2xl"}
+								/>
+							</Box>
 						</Stack>
 						<Box w={"50%"}>
 							<Image src={elem.img} alt="Foto" />
@@ -78,7 +95,7 @@ function Main() {
 									fontSize="40px"
 									textAlign="center"
 									color={i === 0 ? "#005846" : "#005369"}
-									mb='20px'
+									mb="20px"
 								>
 									{elem.title}
 								</Text>

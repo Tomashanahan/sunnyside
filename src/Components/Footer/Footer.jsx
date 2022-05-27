@@ -1,4 +1,4 @@
-import { Box, Flex, Image, Link, Stack, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Stack, Text } from "@chakra-ui/react";
 import React from "react";
 import logo_verde from "../../sunnyside-agency-landing-page-main//images/logo_verde.svg";
 import facebook from "../../sunnyside-agency-landing-page-main/images/icon-facebook.svg";

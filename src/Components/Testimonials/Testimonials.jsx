@@ -15,7 +15,7 @@ const testimonials = [
 		img: thomas,
 		text: "Sunnyside's enthusiasm coupled with ther keen interest in our brand's success made it a satisfying and enjoyable experience.",
 		name: "Thomas S.",
-		position: "Chief Operatinf Officer",
+		position: "Chief Operating Officer",
 	},
 	{
 		img: jennie,

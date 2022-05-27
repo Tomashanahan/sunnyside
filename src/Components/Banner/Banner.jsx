@@ -19,7 +19,7 @@ function Banner() {
 				WE ARE CREATIVES
 			</Text>
 
-			<Box position={"absolute"} zIndex={10} left={"48%"} top={"13%"}>
+			<Box position={"absolute"} zIndex={10} left={"48%"} top={"10%"}>
 				<img src={flecha} alt={"svg"} width="50px" />
 			</Box>
 
