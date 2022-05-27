@@ -1,4 +1,4 @@
-import { Flex } from '@chakra-ui/react';
+import { Flex, Image } from '@chakra-ui/react';
 import React from 'react'
 import cono from '../../sunnyside-agency-landing-page-main/images/desktop/image-gallery-cone.jpg';
 import leche from '../../sunnyside-agency-landing-page-main/images/desktop/image-gallery-milkbottles.jpg';
@@ -7,11 +7,11 @@ import azucar from '../../sunnyside-agency-landing-page-main/images/desktop/imag
 
 function Imgs() {
   return (
-    <Flex wrap={'wrap'}>
-      <img src={leche} alt="leche"  width={['25%','25%','25%']}/>
-      <img src={naranja} alt="naranja"  width={['25%','25%','25%']}/>
-      <img src={cono} alt="cono"  width={['25%','25%','25%']}/>
-      <img src={azucar} alt="azucar"  width={['25%','25%','25%']}/>
+    <Flex wrap={'wrap'} w='100%'>
+      <Image src={leche} alt="leche"  w={['25%','25%','25%']}/>
+      <Image src={naranja} alt="naranja"  w={['25%','25%','25%']}/>
+      <Image src={cono} alt="cono"  w={['25%','25%','25%']}/>
+      <Image src={azucar} alt="azucar"  w={['25%','25%','25%']}/>
     </Flex>
   )
 }
