@@ -52,7 +52,8 @@ function Testimonials() {
 								<Image
 									src={elem.img}
 									alt="Perfil"
-									borderRadius={"full"}
+									borderRadius={"50%"}
+									// borderRadius={"full"}
 									w="100px"
 									justifySelf={"center"}
 									mt={[i !== 0 && "80px", "80px", "0"]}
