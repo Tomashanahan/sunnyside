@@ -37,20 +37,37 @@ let data_2 = [
 
 function Main() {
 	return (
-		<Box /* mt="750px" */>
+		<Box>
 			{data.map((elem, i) => {
 				return (
-					<Flex key={i} flexDirection={i % 2 !== 0 && "row-reverse"}>
-						<Stack bg='#FFFBF8' w={"50%"} p="100px" align={"flex-start"} justify="center">
+					<Flex
+						key={i}
+						flexDirection={[
+							"column-reverse",
+							"column-reverse",
+							i % 2 !== 0 ? "row-reverse" : "row",
+						]}
+					>
+						<Stack
+							bg="#FFFFFF"
+							w={["100%", "100%", "50%"]}
+							p={["30px", "80px", "100px"]}
+							align={["center", "center", "flex-start"]}
+							justify="center"
+						>
 							<Text
 								fontFamily={"'Fraunces', serif"}
 								fontWeight={"extrabold"}
-								fontSize="40px"
-								textAlign="left"
+								fontSize={["20px", "30px", "40px"]}
+								textAlign={["center", "center", "left"]}
 							>
 								{elem.title}
 							</Text>
-							<Text color="#868688" fontWeight={"hairline"} textAlign="left">
+							<Text
+								color="#868688"
+								fontWeight={"hairline"}
+								textAlign={["center", "center", "left"]}
+							>
 								{elem.paragraph}
 							</Text>
 							<Box>
@@ -71,31 +88,37 @@ function Main() {
 								/>
 							</Box>
 						</Stack>
-						<Box w={"50%"}>
-							<Image src={elem.img} alt="Foto" />
+						<Box w={["100%", "100%", "50%"]}>
+							<Image src={elem.img} alt="Foto" w={["100%", "100%", "100%"]} />
 						</Box>
 					</Flex>
 				);
 			})}
-			<Flex>
+			<Flex flexDirection={["column", "column", "row"]}>
 				{data_2.map((elem, i) => {
 					return (
-						<Box key={i} w="50%">
+						<Box
+							key={i}
+							w={["100%", "100%", "50%"]}
+							bg={[i === 0 ? "#9DDACB" : "none", "none"]}
+							h={["325px", "520px", ""]}
+						>
 							<Image src={elem.img} alt="Foto" />
 							<Stack
 								position={"relative"}
-								top="-300px"
-								p="100px"
+								top={["-200px", "-300px", "-300px"]}
+								p={["10px", "80px", "100px"]}
 								align={"center"}
 								justify="center"
 							>
 								<Text
 									fontFamily={"'Fraunces', serif"}
 									fontWeight={"extrabold"}
-									fontSize="40px"
+									fontSize={["20px", "30px", "40px"]}
 									textAlign="center"
+									mb={["10px", "20px", "20px"]}
+									mt={["40px", "0", "0"]}
 									color={i === 0 ? "#005846" : "#005369"}
-									mb="20px"
 								>
 									{elem.title}
 								</Text>

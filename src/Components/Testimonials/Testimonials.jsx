@@ -27,10 +27,10 @@ const testimonials = [
 
 function Testimonials() {
 	return (
-		<Box mt={"-240px"} mb="50px">
+		<Box mt={["40px", "100px", "120px"]} mb="50px">
 			<Text
 				color="#A9AAAB"
-				fontSize="30px"
+				fontSize={["18px", "20px", "30px"]}
 				letterSpacing={"widest"}
 				fontFamily={"'Fraunces', serif"}
 				fontWeight={"extrabold"}
@@ -38,22 +38,24 @@ function Testimonials() {
 				CLIENT TESTIMONIALS
 			</Text>
 			<Flex
+				direction={["column", "column", "row"]}
 				justify={"space-around"}
 				align="center"
-				w="80%"
+				w={["100%", "100%", "100%", "80%"]}
 				m={"auto"}
 				my="100px"
 			>
 				{testimonials.map((elem, i) => {
 					return (
-						<Box key={i} textAlign="center" w="30%">
-							<Flex justify={"center"}>
+						<Box key={i} textAlign="center" w={["80%", "80%", "80%", "30%"]}>
+							<Flex className="flex-testimonials" justify={"center"}>
 								<Image
 									src={elem.img}
 									alt="Perfil"
 									borderRadius={"full"}
 									w="100px"
 									justifySelf={"center"}
+									mt={[i !== 0 && "80px", "80px", "0"]}
 								/>
 							</Flex>
 							<Text mt="30px" color={"#606068"}>

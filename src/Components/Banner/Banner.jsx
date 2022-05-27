@@ -1,6 +1,6 @@
 import React from "react";
 import naranja from "../../sunnyside-agency-landing-page-main/images/desktop/image-header.jpg";
-import { Box, Flex, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Text } from "@chakra-ui/react";
 import flecha from "../../sunnyside-agency-landing-page-main/images/icon-arrow-down.svg";
 
 function Banner() {
@@ -10,22 +10,27 @@ function Banner() {
 				fontFamily={"'Fraunces', serif"}
 				fontWeight={"extrabold"}
 				letterSpacing={"widest"}
-				fontSize="50px"
+				fontSize={["20px", "40px", "50px"]}
 				color={"#FFFCFF"}
-				bg="#3ABFFF"
 				position={"relative"}
-				top="150px"
-				zIndex={2}
+				top={["40px", "40px", "100px"]}
+				my={["40px", "0", "0"]}
+				zIndex={6}
 			>
 				WE ARE CREATIVES
 			</Text>
 
-			<Box position={"absolute"} zIndex={10} left={"48%"} top={"10%"}>
-				<img src={flecha} alt={"svg"} width="50px" />
+			<Box
+				position={"absolute"}
+				zIndex={10}
+				left={"48%"}
+				top={["3.7%", "5%","8%"]}
+			>
+				<Image src={flecha} alt={"svg"} w={["20px", "30px","50px"]} />
 			</Box>
 
-			<Flex position={"relative"} zIndex={1} mt={"-50px"} justify='center'>
-				<img src={naranja} alt="Banner" />
+			<Flex position={"relative"} zIndex={1} mt={"-50px"} justify="center">
+				<Image src={naranja} alt="Banner" />
 			</Flex>
 		</Box>
 	);
