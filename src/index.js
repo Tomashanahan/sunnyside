@@ -12,7 +12,6 @@ const theme = extendTheme({
 		body: `'Barlow', sans-serif`,
 	},
 });
-// font-family: 'Fraunces', serif;
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
