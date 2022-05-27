@@ -8,10 +8,10 @@ import azucar from '../../sunnyside-agency-landing-page-main/images/desktop/imag
 function Imgs() {
   return (
     <Flex wrap={'wrap'} w='100%'>
-      <Image src={leche} alt="leche"  w={['25%','25%','25%']}/>
-      <Image src={naranja} alt="naranja"  w={['25%','25%','25%']}/>
-      <Image src={cono} alt="cono"  w={['25%','25%','25%']}/>
-      <Image src={azucar} alt="azucar"  w={['25%','25%','25%']}/>
+      <Image src={leche} alt="leche"  w={['25%','25%','25%']} h='auto'/>
+      <Image src={naranja} alt="naranja"  w={['25%','25%','25%']} h='auto'/>
+      <Image src={cono} alt="cono"  w={['25%','25%','25%']} h='auto'/>
+      <Image src={azucar} alt="azucar"  w={['25%','25%','25%']} h='auto'/>
     </Flex>
   )
 }
