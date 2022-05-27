@@ -1,6 +1,6 @@
 import React from "react";
 import naranja from "../../sunnyside-agency-landing-page-main/images/desktop/image-header.jpg";
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Flex, Text } from "@chakra-ui/react";
 import flecha from "../../sunnyside-agency-landing-page-main/images/icon-arrow-down.svg";
 
 function Banner() {
@@ -24,9 +24,9 @@ function Banner() {
 				<img src={flecha} alt={"svg"} width="50px" />
 			</Box>
 
-			<Box position={"absolute"} zIndex={1} mt={"-50px"}>
+			<Flex position={"relative"} zIndex={1} mt={"-50px"} justify='center'>
 				<img src={naranja} alt="Banner" />
-			</Box>
+			</Flex>
 		</Box>
 	);
 }

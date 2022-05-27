@@ -37,7 +37,7 @@ let data_2 = [
 
 function Main() {
 	return (
-		<Box mt="750px">
+		<Box /* mt="750px" */>
 			{data.map((elem, i) => {
 				return (
 					<Flex key={i} flexDirection={i % 2 !== 0 && "row-reverse"}>

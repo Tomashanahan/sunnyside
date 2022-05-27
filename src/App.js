@@ -14,9 +14,9 @@ function App() {
 				<Box maxW={"1440px"} m="auto">
 					<Navbar />
 				</Box>
-			</Box>
-			<Box maxW={"1440px"} m="auto">
-				<Banner />
+				<Box maxW={"1440px"} m="auto">
+					<Banner />
+				</Box>
 			</Box>
 			<Box maxW={"1440px"} m="auto">
 				<Main />
