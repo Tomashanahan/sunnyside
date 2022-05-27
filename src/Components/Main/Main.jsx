@@ -63,20 +63,27 @@ function Main() {
 			<Flex>
 				{data_2.map((elem, i) => {
 					return (
-						<Box key={i} w='50%'>
+						<Box key={i} w="50%">
 							<Image src={elem.img} alt="Foto" />
-							<Stack position={'relative'} top='-300px' p="100px" align={"center"} justify="center">
+							<Stack
+								position={"relative"}
+								top="-300px"
+								p="100px"
+								align={"center"}
+								justify="center"
+							>
 								<Text
 									fontFamily={"'Fraunces', serif"}
 									fontWeight={"extrabold"}
 									fontSize="40px"
 									textAlign="center"
-                  color={i === 0 ? '#005846' : '#005369'}
+									color={i === 0 ? "#005846" : "#005369"}
+									mb='20px'
 								>
 									{elem.title}
 								</Text>
 								<Text
-									color={i === 0 ? '#005846' : '#005369'}
+									color={i === 0 ? "#005846" : "#005369"}
 									fontWeight={"hairline"}
 									textAlign="center"
 								>

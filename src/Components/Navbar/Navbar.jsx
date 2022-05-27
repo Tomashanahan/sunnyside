@@ -23,6 +23,7 @@ function Navbar() {
 						color={"#FFFCFF"}
 						bg="#41D1FF"
 						borderRadius="3xl"
+						_hover={{'bg' : '#41D1FF', textTransform : 'none'}}
 					>
 						CONTACT
 					</Button>
