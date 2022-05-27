@@ -15,6 +15,7 @@ function Banner() {
 				bg="#3ABFFF"
 				position={"relative"}
 				top="150px"
+				zIndex={2}
 			>
 				WE ARE CREATIVES
 			</Text>
@@ -23,7 +24,7 @@ function Banner() {
 				<img src={flecha} alt={"svg"} width="50px" />
 			</Box>
 
-			<Box position={"absolute"} zIndex={-1} mt={"-50px"}>
+			<Box position={"absolute"} zIndex={1} mt={"-50px"}>
 				<img src={naranja} alt="Banner" />
 			</Box>
 		</Box>

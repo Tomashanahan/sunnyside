@@ -1,4 +1,4 @@
-import { Button, Flex, Link } from "@chakra-ui/react";
+import { Box, Button, Flex, Link } from "@chakra-ui/react";
 import React from "react";
 import logo from "../../sunnyside-agency-landing-page-main/images/logo.svg";
 
@@ -17,16 +17,20 @@ function Navbar() {
 					Projects
 				</Link>
 				<Link mx={4}>
-					<Button
-						fontFamily={"Fraunces"}
-                        fontSize={'small'}
-						color={"#FFFCFF"}
-						bg="#41D1FF"
-						borderRadius="3xl"
-						_hover={{'bg' : '#41D1FF', textTransform : 'none'}}
-					>
-						CONTACT
-					</Button>
+					<Box>
+						<Button
+							fontFamily={"Fraunces"}
+							fontSize={"small"}
+							color={"#FFFCFF"}
+							bg="#41D1FF"
+							borderRadius="3xl"
+							_hover={{ bg: "#41D1FF", textTransform: "none" }}
+							position='relative'
+							zIndex={5}
+						>
+							CONTACT
+						</Button>
+					</Box>
 				</Link>
 			</Flex>
 		</Flex>

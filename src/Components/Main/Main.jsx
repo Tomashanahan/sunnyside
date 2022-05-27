@@ -41,7 +41,7 @@ function Main() {
 			{data.map((elem, i) => {
 				return (
 					<Flex key={i} flexDirection={i % 2 !== 0 && "row-reverse"}>
-						<Stack w={"50%"} p="100px" align={"flex-start"} justify="center">
+						<Stack bg='#FFFBF8' w={"50%"} p="100px" align={"flex-start"} justify="center">
 							<Text
 								fontFamily={"'Fraunces', serif"}
 								fontWeight={"extrabold"}
