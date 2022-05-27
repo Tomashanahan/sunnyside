@@ -55,6 +55,7 @@ function Testimonials() {
 									borderRadius={"50%"}
 									// borderRadius={"full"}
 									w="100px"
+									h="100%"
 									justifySelf={"center"}
 									mt={[i !== 0 && "80px", "80px", "0"]}
 								/>
