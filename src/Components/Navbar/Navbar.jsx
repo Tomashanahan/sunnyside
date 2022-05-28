@@ -42,25 +42,42 @@ function Navbar() {
 						textAlign="center"
 						_focus={{ outline: "none" }}
 						_hover={{ bg: "none" }}
+						
 					/>
-					<MenuList>
-						<MenuItem justifySelf={"center"} color="#898691">
+					<MenuList borderRadius={"2px"} border='none'>
+						<MenuItem
+							_hover={{ bg: "none" }}
+							justifyContent={"center"}
+							color="#898691"
+						>
 							About
 						</MenuItem>
-						<MenuItem color="#898691">Services</MenuItem>
-						<MenuItem color="#898691">Projects</MenuItem>
-						<MenuItem>
-							<Box>
-								<Button
-									fontFamily={"Fraunces"}
-									fontSize={"small"}
-									bg="#FFD400"
-									borderRadius="3xl"
-									_hover={{ bg: "#FFD400", textTransform: "none" }}
-								>
-									CONTACT
-								</Button>
-							</Box>
+						<MenuItem
+							_hover={{ bg: "none" }}
+							justifyContent={"center"}
+							color="#898691"
+						>
+							Services
+						</MenuItem>
+						<MenuItem
+							_hover={{ bg: "none" }}
+							justifyContent={"center"}
+							color="#898691"
+						>
+							Projects
+						</MenuItem>
+						<MenuItem _hover={{ bg: "none" }} justifyContent={"center"}>
+							{/* <Flex justifyContent={"center"}> */}
+							<Button
+								fontFamily={"Fraunces"}
+								fontSize={"small"}
+								bg="#FFD400"
+								borderRadius="3xl"
+								_hover={{ bg: "#FFD400", textTransform: "none" }}
+							>
+								CONTACT
+							</Button>
+							{/* </Flex> */}
 						</MenuItem>
 					</MenuList>
 				</Menu>
