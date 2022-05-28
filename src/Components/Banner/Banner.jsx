@@ -15,7 +15,7 @@ function Banner() {
 				position={"relative"}
 				top={["40px", "40px", "100px"]}
 				my={["40px", "0", "0"]}
-				zIndex={6}
+				zIndex={2}
 			>
 				WE ARE CREATIVES
 			</Text>
